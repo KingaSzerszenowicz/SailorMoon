@@ -1,0 +1,60 @@
+body {
+    background: rgb(255, 173, 224);
+}
+
+.mainHeader {
+    color: rgb(103, 58, 183);
+    font-size: 50px;
+}
+
+.navigationHeader {
+    font-size: 13px;
+}
+
+.articleHeader {
+    color: rgb(134, 80, 228);
+    font-size: 25px;
+}
+
+.mediumHeader {
+    color: rgb(171, 122, 255);
+}
+
+.smallHeader {
+    color: rgb(175, 130, 252);
+}
+
+.marsBody {
+    background: rgb(245, 51, 84)
+}
+
+.marsArticle {
+    color: rgb(73, 53, 134);
+}
+
+.marsHeader {
+    color: rgb(73, 53, 134);
+}
+
+.moonBody {
+    background: rgb(246, 194, 84);
+}
+
+.moonArticle {
+    color: rgb(62, 73, 128);
+}
+
+.moonHeader {
+    color: rgb(62, 73, 128);
+}
+.mercuryBody {
+    background: rgb(93, 155, 248);
+}
+
+.mercuryArticle {
+    color: rgb(1, 27, 173);
+}
+
+.mercuryHeader {
+    color: rgb(1, 27, 173);
+}
