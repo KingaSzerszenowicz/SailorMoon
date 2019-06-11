@@ -58,3 +58,14 @@ body {
 .mercuryHeader {
     color: rgb(1, 27, 173);
 }
+.jupiterBody {
+    background: rgb(250, 141, 223);
+}
+
+.jupiterArticle {
+    color: rgb(5, 94, 49);
+}
+
+.jupiterHeader {
+    color: rgb(5, 94, 49);
+}
