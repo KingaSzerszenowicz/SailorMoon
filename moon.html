@@ -9,38 +9,35 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="moonBody">
+<body class="moonBody" id="goup">
     <header>
-        <a class="navigationHeader" id="top" href="index.html">Strona główna</a>
-        <a class="navigationHeader" href="index.html#characters">Postacie</a>
+        <a class="link navigation" id="top" href="index.html">Strona główna</a><br>
+        <a class="link navigation" href="index.html#characters">Postacie</a>
     </header>
-    <main>
+    <main class="main">
         <header>
-            <h1 class="moonHeader">Sailor Moon - Czarodziejka z Księżyca 🌙<br>
-                Usagi Tsukino</h1>
+            <h1 class="main__header moonHeaderColor">Sailor Moon - Czarodziejka z Księżyca</h1>
         </header>
-        <img src="usagiTsukino.jpg" alt="Usagi Tsukino">
-        <article>
-            <h2 class="moonHeader">Wprowadzenie</h2>
-            <p>
+        <img src="usagiTsukino.jpg" alt="Usagi Tsukino" class="pictureVertical">
+        <section class="content">
+            <h2 class="content__subheader moonHeaderColor">Wprowadzenie</h2>
+            <p class="content__text">
                 Czarodziejka z Księżyca (jap. セーラームーン Sērā Mūn, Sailor Moon) – fikcyjna postać z serii mang i anime
                 Sailor Moon autorstwa Naoko Takeuchi, pojawia się jako główna i tytułowa bohaterka serii. Jej imię,
                 Usagi Tsukino (jap. 月野 うさぎ Tsukino Usagi), oznacza "Księżycowy Królik" (czytane tsuki no usagi (jap.
                 月の兎)) i nawiązuje do starej, japońskiej legendy, która mówi, że na Księżycu mieszkał królik[1].
             </p>
-            <p>
+            <p class="content__text">
                 Uwaga tłumaczeniowa: "Usagi" w języku japońskim oznacza królika. Polska wersja językowa powstała na
                 bazie tłumaczeń angielskojęzycznych, w których imię Usagi zostało przetłumaczone na "Bunny" (ang.
                 "królik"). Dlatego w polskiej wersji Czarodziejki z Księżyca spotkać można imię Bunny, czy wręcz
                 (prawdopodobnie na skutek błędnego czytania) "Bane" lub „Buny”.
             </p>
-        </article>
-        <br>
-        <a href="#top">Wróć na górę.</a>
+        </section>
     </main>
-    <footer>
-        <br><br>
-        <em>Treść skopiowana z <a
+    <footer class="footer">
+        <a class="link top" href="#goup">Wróć na górę.</a>
+        <em>Treść skopiowana z <a class="link wikipedia"
                 href="https://pl.wikipedia.org/wiki/Czarodziejka_z_Ksi%C4%99%C5%BCyca">Wikipedii.</a></em>
     </footer>
     <script src="moon.js"></script>

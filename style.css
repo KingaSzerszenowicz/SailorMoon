@@ -1,71 +1,138 @@
-body {
+.content {
+    margin-bottom: 40px;
+}
+
+.footer {
+    width: 80%;
+    max-width: 900px;
+    margin: 32px auto;
+    margin-left: 100px;
+}
+
+.indexBody {
     background: rgb(255, 173, 224);
+    padding: 16px 30px;
+    border: 30px groove rgb(103, 58, 183);
+    border-radius: 30px;
 }
 
-.mainHeader {
+.main__header {
+    font-size: 47px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 32px auto;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.indexHeaderColor {
     color: rgb(103, 58, 183);
-    font-size: 50px;
 }
 
-.navigationHeader {
+.navigation {
     font-size: 13px;
+    margin: 5px;
+    position: fixed;
 }
 
-.articleHeader {
-    color: rgb(134, 80, 228);
-    font-size: 25px;
+.link {
+    text-decoration: none;
 }
 
-.mediumHeader {
-    color: rgb(171, 122, 255);
+.content__header {
+    font-size: 35px;
 }
 
-.smallHeader {
-    color: rgb(175, 130, 252);
+.content__subheader {
+    font-size: 20px;
+}
+
+.content__listheader {
+    text-decoration-line: underline;
+    font-weight: normal;
 }
 
 .marsBody {
-    background: rgb(245, 51, 84)
+    background: rgb(245, 51, 84);
+    padding: 16px 30px;
+    border: 30px groove rgb(73, 53, 134);
+    border-radius: 30px;
 }
 
-.marsArticle {
-    color: rgb(73, 53, 134);
-}
-
-.marsHeader {
+.marsHeaderColor {
     color: rgb(73, 53, 134);
 }
 
 .moonBody {
     background: rgb(246, 194, 84);
+    padding: 16px 30px;
+    border: 30px groove rgb(62, 73, 128);
+    border-radius: 30px;
 }
 
-.moonArticle {
+.moonHeaderColor {
     color: rgb(62, 73, 128);
 }
 
-.moonHeader {
-    color: rgb(62, 73, 128);
-}
+
 .mercuryBody {
     background: rgb(93, 155, 248);
+    padding: 16px 30px;
+    border: 30px groove rgb(1, 27, 1738);
+    border-radius: 30px;
 }
 
-.mercuryArticle {
+.mercuryHeaderColor {
     color: rgb(1, 27, 173);
 }
 
-.mercuryHeader {
-    color: rgb(1, 27, 173);
-}
 .jupiterBody {
     background: rgb(250, 141, 223);
-}
-
-.jupiterArticle {
-    color: rgb(5, 94, 49);
+    padding: 16px 30px;
+    border: 30px groove rgb(5, 94, 49);
+    border-radius: 30px;
 }
 
 .jupiterHeader {
     color: rgb(5, 94, 49);
+}
+
+.main {
+    width: 80%;
+    max-width: 900px;
+    margin: 32px auto;
+    margin-left: 100px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 255, 131);
+    padding: 10px;
+    border: 10px solid navy;
+    margin: 10px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    right: 50%;
+}
+
+.top {
+    position: fixed;
+    right: 50px;
+    bottom: 45px;
+    font-size: 13px;
+}
+
+.pictureVertical {
+    width: 100%;
+    max-width: 200px;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+.pictureHorizontal {
+    height: 100%;
+    max-height: 300px;
+    float: left;
+    margin: 0 15px 15px 0;
 }
