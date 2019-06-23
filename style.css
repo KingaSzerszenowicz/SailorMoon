@@ -2,137 +2,172 @@
     margin-bottom: 40px;
 }
 
+.content__header {
+    font-size: 35px;
+}
+
+.content__listheader {
+    font-weight: normal;
+    text-decoration-line: underline;
+}
+
+.content__orderedList {
+    padding: 0;
+}
+
+.content__subheader, .glossary__title {
+    font-size: 20px;
+}
+
+.content__text {
+    line-height: 24px;
+}
+
+.content_unorderedList {
+    list-style: none;
+    padding: 0;
+}
+
+.data {}
+
 .footer {
-    width: 80%;
-    max-width: 900px;
     margin: 32px auto;
     margin-left: 100px;
+    max-width: 900px;
+    width: 80%;
+}
+
+.glossary {}
+
+.glossary__content {
+    line-height: 24px;
+}
+
+.glossary__description {
+    margin-bottom: 24px;
+    padding: 16px;
+}
+
+.glossary__title {
+    font-weight: bold;
 }
 
 .indexBody {
     background: rgb(255, 173, 224);
-    padding: 16px 30px;
     border: 30px groove rgb(103, 58, 183);
     border-radius: 30px;
+    padding: 16px 30px;
 }
 
-.main__header {
-    font-size: 47px;
-    width: 100%;
-    max-width: 1000px;
-    margin: 32px auto;
-    margin-bottom: 100px;
-    position: relative;
-}
-
-.indexHeaderColor {
+.indexHeaderColor, .glossary__title {
     color: rgb(103, 58, 183);
 }
 
-.navigation {
-    font-size: 13px;
-    margin: 5px;
-    position: fixed;
+.jupiterBody {
+    background: rgb(250, 141, 223);
+    border: 30px groove rgb(5, 94, 49);
+    border-radius: 30px;
+    padding: 16px 30px;
+}
+
+.jupiterHeaderColor {
+    color: rgb(5, 94, 49);
 }
 
 .link {
     text-decoration: none;
 }
 
-.content__header {
-    font-size: 35px;
+.main {
+    margin: 32px auto;
+    max-width: 900px;
+    width: 80%;
 }
 
-.content__subheader {
-    font-size: 20px;
-}
-
-.content__listheader {
-    text-decoration-line: underline;
-    font-weight: normal;
+.main__header {
+    font-size: 47px;
+    margin: 32px auto;
+    margin-bottom: 100px;
+    max-width: 1000px;
+    position: relative;
+    width: 100%;
 }
 
 .marsBody {
     background: rgb(245, 51, 84);
-    padding: 16px 30px;
     border: 30px groove rgb(73, 53, 134);
     border-radius: 30px;
+    padding: 16px 30px;
 }
 
 .marsHeaderColor {
     color: rgb(73, 53, 134);
 }
 
-.moonBody {
-    background: rgb(246, 194, 84);
-    padding: 16px 30px;
-    border: 30px groove rgb(62, 73, 128);
-    border-radius: 30px;
-}
-
-.moonHeaderColor {
-    color: rgb(62, 73, 128);
-}
-
-
 .mercuryBody {
     background: rgb(93, 155, 248);
-    padding: 16px 30px;
     border: 30px groove rgb(1, 27, 1738);
     border-radius: 30px;
+    padding: 16px 30px;
 }
 
 .mercuryHeaderColor {
     color: rgb(1, 27, 173);
 }
 
-.jupiterBody {
-    background: rgb(250, 141, 223);
-    padding: 16px 30px;
-    border: 30px groove rgb(5, 94, 49);
+.moonBody {
+    background: rgb(246, 194, 84);
+    border: 30px groove rgb(62, 73, 128);
     border-radius: 30px;
+    padding: 16px 30px;
 }
 
-.jupiterHeader {
-    color: rgb(5, 94, 49);
+.moonHeaderColor {
+    color: rgb(62, 73, 128);
 }
 
-.main {
-    width: 80%;
-    max-width: 900px;
-    margin: 32px auto;
-    margin-left: 100px;
-}
-
-.box {
-    width: 100px;
-    height: 100px;
-    background: rgb(255, 255, 131);
-    padding: 10px;
-    border: 10px solid navy;
-    margin: 10px;
-    box-sizing: border-box;
-    position: sticky;
-    top: 0;
-    right: 50%;
-}
-
-.top {
-    position: fixed;
-    right: 50px;
-    bottom: 45px;
+.navigation {
     font-size: 13px;
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    position: fixed;
+}
+
+.pictureHorizontal {
+    float: left;
+    height: 100%;
+    margin: 0 15px 15px 0;
+    max-height: 300px;
 }
 
 .pictureVertical {
-    width: 100%;
+    float: left;
     max-width: 200px;
-    float: left;
     margin: 0 15px 15px 0;
+    width: 100%;
 }
-.pictureHorizontal {
-    height: 100%;
-    max-height: 300px;
-    float: left;
-    margin: 0 15px 15px 0;
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table__headrow {
+    border: 1.5px solid black;
+    border-color: rgb(62, 73, 128);
+    padding: 5px;
+}
+
+.table__data {
+    border: 1px solid black;
+    border-color: rgb(62, 73, 128);
+    padding: 5px;
+}
+
+.top {
+    bottom: 45px;
+    font-size: 13px;
+    position: fixed;
+    right: 50px;
 }
