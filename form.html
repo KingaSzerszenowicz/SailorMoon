@@ -11,7 +11,10 @@
 </head>
 
 <body class="indexBody" id="goup">
-    <header>
+    <main class="main grid">
+        <header class="header">
+            <h1 class="main__header indexHeaderColor">Formularze</h1>
+        </header>
         <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a></li>
@@ -19,134 +22,132 @@
                 </li>
                 <li class="navigation__item"><a class="navigation__link" href="glossary.html">Słowniczek</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="form.html">Formularze</a></li>
+                </br></br>
+                <li> <a class="link top" href="#goup">Wróć na górę</a></li>
             </ul>
         </nav>
-    </header>
-    <main class="main">
-        <header>
-            <h1 class="main__header indexHeaderColor">Formularze</h1>
-        </header>
-        <form method="POST" action="https://dev.cotenfrontend.pl" class="form">
-            <div>
-                <p class="content__text">
-                    <label for="name">Twoje imię:</label>
-                    <input required type="text" placeholder="wpisz swoje imię" name="name" id="name"></input>
-                </p>
-                <p class="content__text">
-                    <label for="surname">Twoje nazwisko:
-                        <input type="text" placeholder="wpisz swoje nazwisko" name="surname" id="surname"></input>
-                    </label>
-                </p>
-                <p class="content__text">
-                    <label for="age">Rok urodzenia:
-                        <input type="number" value="1988" name="age" id="age"></input>
-                    </label>
-                </p>
-                <p class="content__text">
-                    <label for="phone">Numer telefonu:
-                        <input type="tel" name="phone" id="phone"></input>
-                    </label>
-                </p>
-                <p class="content__text">
-                    <label for="email">Email:
-                        <input type="email" name="email" id="email"></input>
-                    </label>
-                </p>
-                <p class="content__text">
-                    <label for="password">Hasło:
-                        <input required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                            type="password" name="password" id="password"></input>
-                    </label>
-                </p>
-                <p class="content__text">
-                    <label for="volume">Range test:
-                        <input type="range" min="0" max="100" step="5" name="volume" id="volume"></input>
-                    </label>
-                </p>
-                <p class="content__text">
-                    <label for="avatar">Wgraj avatar:
-                        <input type="file" name="avatar" id="avatar"></input>
-                    </label>
-                </p>
-            </div>
-            <p>
-                <fieldset>
-                    <legend>Twoja ulubiona czarodziejka to:</legend>
+        <section class="content">
+            <form method="POST" action="https://dev.cotenfrontend.pl" class="form">
+                <div>
+                    <p class="content__text">
+                        <label for="name">Twoje imię:</label>
+                        <input required type="text" placeholder="wpisz swoje imię" name="name" id="name"></input>
+                    </p>
+                    <p class="content__text">
+                        <label for="surname">Twoje nazwisko:
+                            <input type="text" placeholder="wpisz swoje nazwisko" name="surname" id="surname"></input>
+                        </label>
+                    </p>
+                    <p class="content__text">
+                        <label for="age">Rok urodzenia:
+                            <input type="number" value="1988" name="age" id="age"></input>
+                        </label>
+                    </p>
+                    <p class="content__text">
+                        <label for="phone">Numer telefonu:
+                            <input type="tel" name="phone" id="phone"></input>
+                        </label>
+                    </p>
+                    <p class="content__text">
+                        <label for="email">Email:
+                            <input type="email" name="email" id="email"></input>
+                        </label>
+                    </p>
+                    <p class="content__text">
+                        <label for="password">Hasło:
+                            <input required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                                type="password" name="password" id="password"></input>
+                        </label>
+                    </p>
+                    <p class="content__text">
+                        <label for="volume">Range test:
+                            <input type="range" min="0" max="100" step="5" name="volume" id="volume"></input>
+                        </label>
+                    </p>
+                    <p class="content__text">
+                        <label for="avatar">Wgraj avatar:
+                            <input type="file" name="avatar" id="avatar"></input>
+                        </label>
+                    </p>
+                </div>
+                <p>
+                    <fieldset>
+                        <legend>Twoja ulubiona czarodziejka to:</legend>
 
-            </p>
-            <p class="content__text">
-                <input value="moon" checked type="radio" name="optionFav" id="optionMoon"></input>
-                <label for="optionMoon">Sailor Moon</label>
+                </p>
+                <p class="content__text">
+                    <input value="moon" checked type="radio" name="optionFav" id="optionMoon"></input>
+                    <label for="optionMoon">Sailor Moon</label>
 
-            </p>
-            <p class="content__text">
-                <input value="mercury" type="radio" name="optionFav" id="optionMercury"></input>
-                <label for="optionMercury">Sailor Mercury</label>
+                </p>
+                <p class="content__text">
+                    <input value="mercury" type="radio" name="optionFav" id="optionMercury"></input>
+                    <label for="optionMercury">Sailor Mercury</label>
 
-            </p>
-            <p class="content__text">
-                <input value="mars" type="radio" name="optionFav" id="optionMars"></input>
-                <label for="optionMars">Sailor Mars</label>
+                </p>
+                <p class="content__text">
+                    <input value="mars" type="radio" name="optionFav" id="optionMars"></input>
+                    <label for="optionMars">Sailor Mars</label>
 
-            </p>
-            <p class="content__text">
-                <input value="jupiter" type="radio" name="optionFav" id="optionJupiter"></input>
-                <label for="optionJupiter">Sailor Jupiter</label>
+                </p>
+                <p class="content__text">
+                    <input value="jupiter" type="radio" name="optionFav" id="optionJupiter"></input>
+                    <label for="optionJupiter">Sailor Jupiter</label>
 
-            </p>
-            <p class="content__text">
-                <input value="venus" type="radio" name="optionFav" id="optionVenus"></input>
-                <label for="optionVenus">Sailor Venus</label>
-            </p>
-            </fieldset>
-            <div>
-                <h3 class="content__subheader indexHeaderColor">Obejrzane przeze mnie sezony to:</h3>
-                <p class="content__text">
-                    <input value="SM" type="checkbox" name="seasonCheck" id="seasonCheck1"></input>
-                    <label for="seasonCheck1">Sailor Moon</label>
                 </p>
                 <p class="content__text">
-                    <input value="R" type="checkbox" name="seasonCheck" id="seasonCheck2"></input>
-                    <label for="seasonCheck2">Sailor Moon R</label>
+                    <input value="venus" type="radio" name="optionFav" id="optionVenus"></input>
+                    <label for="optionVenus">Sailor Venus</label>
                 </p>
-                <p class="content__text">
-                    <input value="S" type="checkbox" name="seasonCheck" id="seasonCheck3"></input>
-                    <label for="seasonCheck3">Sailor Moon S</label>
+                </fieldset>
+                <div>
+                    <h3 class="content__subheader indexHeaderColor">Obejrzane przeze mnie sezony to:</h3>
+                    <p class="content__text">
+                        <input value="SM" type="checkbox" name="seasonCheck" id="seasonCheck1"></input>
+                        <label for="seasonCheck1">Sailor Moon</label>
+                    </p>
+                    <p class="content__text">
+                        <input value="R" type="checkbox" name="seasonCheck" id="seasonCheck2"></input>
+                        <label for="seasonCheck2">Sailor Moon R</label>
+                    </p>
+                    <p class="content__text">
+                        <input value="S" type="checkbox" name="seasonCheck" id="seasonCheck3"></input>
+                        <label for="seasonCheck3">Sailor Moon S</label>
+                    </p>
+                    <p class="content__text">
+                        <input value="SS" type="checkbox" name="seasonCheck" id="seasonCheck4"></input>
+                        <label for="seasonCheck4">Sailor Moon SuperS</label>
+                    </p>
+                    <p class="content__text">
+                        <input value="Stars" type="checkbox" name="seasonCheck" id="seasonCheck5"></input>
+                        <label for="seasonCheck5">Sailor Moon Sailor Stars</label>
+                    </p>
+                    <p class="content__text">
+                        <input value="C" type="checkbox" name="seasonCheck" id="seasonCheckC"></input>
+                        <label for="seasonCheckC">Sailor Moon Crystal</label>
+                    </p>
+                </div>
+                <p>
+                    <label for="fan">Czy jesteś fanem Sailor Moon?</label>
+                    <select name="fan" id="fan">
+                        <option value="user is a fan">Tak</option>
+                        <option value="user is a not a fan">Nie</option>
+                        <option value="user is unsure">Nie wiem</option>
+                    </select>
                 </p>
-                <p class="content__text">
-                    <input value="SS" type="checkbox" name="seasonCheck" id="seasonCheck4"></input>
-                    <label for="seasonCheck4">Sailor Moon SuperS</label>
+                <p>
+                    <label for="opis">Napisz coś o sobie</label></br>
+                    <textarea name="opis" id="opis"></textarea>
                 </p>
-                <p class="content__text">
-                    <input value="Stars" type="checkbox" name="seasonCheck" id="seasonCheck5"></input>
-                    <label for="seasonCheck5">Sailor Moon Sailor Stars</label>
-                </p>
-                <p class="content__text">
-                    <input value="C" type="checkbox" name="seasonCheck" id="seasonCheckC"></input>
-                    <label for="seasonCheckC">Sailor Moon Crystal</label>
-                </p>
-            </div>
-            <p>
-                <label for="fan">Czy jesteś fanem Sailor Moon?</label>
-                <select name="fan" id="fan">
-                    <option value="user is a fan">Tak</option>
-                    <option value="user is a not a fan">Nie</option>
-                    <option value="user is unsure">Nie wiem</option>
-                </select>
-            </p>
-            <p>
-                <label for="opis">Napisz coś o sobie</label></br>
-                <textarea name="opis" id="opis"></textarea>
-            </p>
-            <input type="submit" value="wyślij na księżyc">
-        </form>
-
+                <input type="submit" value="wyślij na księżyc">
+            </form>
+        </section>
+        <footer class="footer">
+            <em>Treść skopiowana z <a class="link"
+                    href="https://pl.wikipedia.org/wiki/Czarodziejka_z_Ksi%C4%99%C5%BCyca">Wikipedii.</a></em>
+        </footer>
     </main>
-    <footer class="footer">
-        <a class="link top" href="#goup">Wróć na górę.</a>
-        <em>Treść skopiowana z <a class="link"
-                href="https://pl.wikipedia.org/wiki/Czarodziejka_z_Ksi%C4%99%C5%BCyca">Wikipedii.</a></em>
-    </footer>
+
 </body>
 
 </html>

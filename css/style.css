@@ -1,7 +1,6 @@
-
 /* beginning of normalizing */
-   
-   html {
+
+html {
     box-sizing: border-box;
 }
 
@@ -12,7 +11,7 @@
 /* ending of normalizing */
 
 .content {
-    margin-bottom: 40px;
+   grid-area: content;
 }
 
 .content__header {
@@ -25,6 +24,7 @@
 }
 
 .content__orderedList {
+    list-style-position: inside;
     padding: 0;
 }
 
@@ -33,6 +33,7 @@
 }
 
 .content__text {
+    text-align: justify;
     line-height: 24px;
 }
 
@@ -44,10 +45,8 @@
 .data {}
 
 .footer {
-    margin: 32px auto;
-    margin-left: 100px;
-    max-width: 900px;
-    width: 80%;
+    grid-area: footer;
+    margin-top: 32px;
 }
 
 .form {
@@ -74,14 +73,27 @@
     font-weight: bold;
 }
 
+.grid {
+    display: grid;
+    grid-column-gap: 16px;
+    grid-template-areas: "header header header"
+    "content . menu"
+    "footer footer footer"; 
+    grid-template-columns: [pierwsza] 4fr [druga] 50px [ostatnia] 200px;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
 .indexBody {
-    background: url('../img/background.jpg'); /* rgb(255, 173, 224); */
+    background: url('../img/background.jpg');
+    /* rgb(255, 173, 224); */
     background-attachment: fixed;
     background-position: right top;
     background-repeat: repeat;
     background-size: contain;
-    border: 30px groove rgb(103, 58, 183);
-    border-radius: 30px;
     min-height: 100vh;
     padding: 16px 30px;
 }
@@ -92,8 +104,6 @@
 
 .jupiterBody {
     background: rgb(250, 141, 223);
-    border: 30px groove rgb(5, 94, 49);
-    border-radius: 30px;
     padding: 16px 30px;
 }
 
@@ -106,37 +116,32 @@
 }
 
 .main {
-    margin: 32px auto;
-    max-width: 900px;
+    margin: 32px;
     min-height: 100vh;
-    width: 80%;
+    width: 100%;
 }
 
 .main__header {
     font-size: 47px;
     margin: 32px auto;
     margin-bottom: 100px;
-    max-width: 600px;
     position: relative;
     width: 100%;
 }
 
 .marsBody {
-    background: rgb(245, 51, 83,);
-    border: 30px groove rgb(73, 53, 134);
-    border-radius: 30px;
+    background: rgb(73,53,134);
+    background: linear-gradient(355deg, rgba(73,53,134,1) 5%, rgba(245,51,83,1) 56%);
     padding: 16px 30px;
 }
 
 .marsHeaderColor {
-    color: rgb(73, 53, 134);
+    color: #493586;
 }
 
 .mercuryBody {
     background-color: #0056d7;
     background-image: linear-gradient(0deg, #0056d7 0%, #5d9bf8 46%);
-    border: 30px groove rgb(1, 27, 1738);
-    border-radius: 30px;
     padding: 16px 30px;
 }
 
@@ -145,19 +150,17 @@
 }
 
 .moonBody {
-    background: rgb(246, 194, 84);
-    border: 30px groove rgb(62, 73, 128);
-    border-radius: 30px;
+    background: rgb(247,211,138);
+    background: radial-gradient(circle, rgba(247,211,138,1) 9%, rgba(246,194,84,1) 70%);
     padding: 16px 30px;
 }
 
 .moonHeaderColor {
-    color: rgb(62, 73, 128);
+    color: #3e4980;
 }
 
-.navigation {
-    font-size: 13px;
-    position: fixed;
+.navigation {  
+    grid-area: menu;
 }
 
 .navigation__link {
@@ -165,9 +168,11 @@
 }
 
 .navigation__list {
+    font-size: 20px;
     list-style: none;
     margin: 5px;
     padding: 0;
+    position: fixed;  
 }
 
 .pictureHorizontal {
@@ -203,7 +208,5 @@
 
 .top {
     bottom: 45px;
-    font-size: 13px;
-    position: fixed;
     right: 50px;
 }
